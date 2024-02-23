@@ -12,9 +12,26 @@
 
 
 
-    //1ª Digitação (aqui) 
+    class Pessoa {
+      // propriedades
+      nome = 'sem nome';
+      genero = 'não informado';
+      idade;
+    
 
+    // Métodos
+    mostraGenero() {
+      exibirNaTela(this.genero);
+    }
 
+    mostraNome() {
+      exibirNaTela(this.nome)
+    }
+
+    verificarIdade() {
+      return this.idade >=18 ? 'È maior' : 'È menor';
+    }
+  }
 
     // Traz tudo da classe mãe (Pessoa) + as particularidades da classe (Aluno)
     class Aluno extends Pessoa {
