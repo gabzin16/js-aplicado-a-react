@@ -28,7 +28,7 @@
       exibirNaTela(this.nome)
     }
 
-    verificarIdade() {
+    verificaIdade() {
       return this.idade >=18 ? 'È maior' : 'È menor';
     }
   }
@@ -52,15 +52,34 @@
 
     // Criando objetos/ instâncias
 
+    let umaPessoa = new Pessoa;
+    umaPessoa.nome = 'Checo Perez';
+    umaPessoa.genero = 'masculino';
+    umaPessoa.idade = 30;
 
+    exibirNaTela(umaPessoa);
 
-    //2ª Digitação (aqui) 
+    let outraPessoa = new Pessoa;
+    outraPessoa.nome = 'Maria';
+    outraPessoa.idade = '25';
 
+    exibirNaTela(outraPessoa);
+
+    
 
 
 
     // Objeto herdando recursos
+ let aluno = new Aluno;
+ aluno.nome ='Vitória';
+ aluno.genero ='feminino';
+ aluno.matricula ='123abc';
+ aluno.curso ='JS para React';
+ aluno.idade =25;
 
+ exibirNaTela(aluno.nome);
+ exibirNaTela(aluno.idade);
+ exibirNaTela(aluno.verificaIdade);
 
 
 

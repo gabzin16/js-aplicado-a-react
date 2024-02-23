@@ -18,14 +18,33 @@
 
     //1ª Digitação (aqui) 
 
+    const bandas =['metallica', 'Guns n Roses', 'RHCP', 'deep purple']
+    const maisbandas = [...bandas, 'Charlie Brown Jr', 'Mega Death'];
+
 
 
     exibirNaTela(maisbandas);
 
     exibirNaTela('======================');
 
+ 
+
     // Spread com objeto
 
+    const dados = {
+      nome: 'Viviane',
+      idade: 21
+    }
+
+   const novosDados = {
+    ...dados,
+    cidade: 'São Paulo',
+    estado: 'SP',
+    idade: 25
+   };
+   exibirNaTela(dados);
+   exibirNaTela(novosDados);
+   exibirNaTela(novosDados.idade);
 
 
     //2ª Digitação (aqui) 
