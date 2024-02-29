@@ -14,7 +14,9 @@
 
 
 
-    //1ª Digitação (aqui) 
+   function ordenar(...parametros) {
+    return parametros.sort();
+   }
 
 
 
@@ -28,7 +30,8 @@
 
     const cursos = ['React', 'Angular', 'Vue', 'JS', 'Node.JS','PH','SQL'];
 
-
+   exibirNaTela(cursos);
+   exibirNaTela(ordenar(...cursos));
 
     //2ª Digitação (aqui) 
 
@@ -54,9 +57,12 @@
     // _________________________
     // Exercício: Transforme as funções acima em arrow function
 
+    const testeOrdenar = (...parametros) => parametros.sort();
 
+    exibirNaTela( testeOrdenar ('Jair', 'Larissa Manoela','Andrea'));
+    exibirNaTela( testeOrdenar ('Lana Del Rey','The Weeknd','Guns n Roses'));
 
-    //3ª Digitação (aqui) 
+    
 
 
 

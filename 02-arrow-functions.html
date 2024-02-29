@@ -10,19 +10,15 @@
 
   <script>
 
-
-
     // Função sintaxe tradicional
-    function nomeDaFuncao () {
-      exibirNaTela ('Função sintaxe tradicional');
+    function nomeDaFuncao() {
+      exibirNaTela('Função de sintaxe tradicional...');
     }
 
-    // Função antônima
-    var outraFuncao = function () {
+    // Função anônima
+    var outraFuncao = function() {
       exibirNaTela('Outra forma de declarar função...');
     }
-
-
 
     // Chamada da função
     nomeDaFuncao();
@@ -40,10 +36,6 @@
 
     let resultado = exercicio(10,3);
 
-    //2ª Digitação (aqui) 
-
-
-
     exibirNaTela(resultado);
 
     /* Arrow Function (função seta/ flecha)
@@ -57,7 +49,7 @@
 
     const ola = nome => exibirNaTela('Olá ' + nome);
 
-    ola('Gabs Gatinho');
+    ola('Ignacio');
 
     // Versão simplificada (Arrow function com retorno IMPLÍCITO)
     const metade = valor => valor / 2;
@@ -78,28 +70,11 @@
     - Monte uma arrow function que receba um nome de pessoa e a converta para letras maiúsculas.
     - Chame a função 3x (passando nomes diferentes) e exibindo no console e tela os resultados */
 
-    const converterParaMaiusculas = (nome) => {
-  return nome.toUpperCase();
-};
+    let converterMaiuscula = nome => nome.toUpperCase();
 
-// Exemplo de uso
-const nome1 = "Lara Barrosa";
-const nome2 = "Matheus Lixento";
-const nome3 = "Ana Barracuda";
-
-console.log(converterParaMaiusculas(nome1)); // Exibindo no console
-console.log(converterParaMaiusculas(nome2)); // Exibindo no console
-console.log(converterParaMaiusculas(nome3)); // Exibindo no console
-
-document.write(converterParaMaiusculas(nome1)); // Exibindo na tela
-document.write("<br>"); // Quebra de linha na tela
-document.write(converterParaMaiusculas(nome2)); // Exibindo na tela
-document.write("<br>"); // Quebra de linha na tela
-document.write(converterParaMaiusculas(nome3)); // Exibindo na tela
-
-  
-
-
+    exibirNaTela(converterMaiuscula('Ignacio'));
+    exibirNaTela(converterMaiuscula('Gisele'));
+    exibirNaTela(converterMaiuscula('Linda'));
 
     function exibirNaTela(texto) {
       // Exibe a mensagem no console do navegador
